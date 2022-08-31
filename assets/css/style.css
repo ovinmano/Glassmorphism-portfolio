@@ -479,7 +479,7 @@ h5 {
 
 }
 
-@media only screen and (min-width:530px) {
+@media only screen and (max-width:530px) {
     .details-container {
         height: 70%;
     }
@@ -582,7 +582,7 @@ h5 {
 
 }
 
-@media only screen and (min-width:364px) {
+@media only screen and (max-width:364px) {
     .details-container {
         height: 75%;
     }
