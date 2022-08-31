@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ABOUT</title>
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Css Style -->
+    <style>
+        /* font-family */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to right, rgb(15, 0, 231), rgba(156, 1, 1, 0.712));
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 95%;
+            height: 16vh;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 14px;
+            margin-bottom: 75vh;
+            justify-content: space-between;
+            box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+        }
+
+        .container:hover {
+            background: #ff0000;
+            box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+
+        }
+
+        .icons {
+            display: inline-block;
+            justify-content: space-between;
+            margin: 35px;
+            position: relative;
+        }
+
+        .fa-angle-left {
+            justify-content: space-between;
+            font-size: 22px;
+            color: aliceblue;
+        }
+
+        .fa-angle-right {
+            padding-left: 20px;
+            justify-content: space-between;
+            font-size: 22px;
+            color: aliceblue;
+        }
+
+        .fa-house-chimney {
+            padding-left: 20px;
+            justify-content: space-between;
+            font-size: 22px;
+            color: aliceblue;
+        }
+
+        .logo {
+            display: inline-block;
+            justify-content: space-between;
+            margin: 25px;
+            margin-right: 44%;
+            position: relative;
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+        }
+
+        li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        nav {
+            width: 95%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+        }
+
+        .fa-angle-right:hover,
+        .fa-angle-left:hover,
+        .fa-house-chimney:hover,
+        .logo:hover {
+            color: black;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .code-container {
+            margin-top: 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .html-code {
+            padding: 22px;
+            border-radius: 6px;
+            margin: 15px;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+        }
+
+        .html-code:hover {
+            background: #ff0000;
+            box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+
+        }
+
+        .css-code {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 6px;
+            margin: 15px;
+            box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+        }
+
+        .css-code:hover {
+            background: #ff0000;
+            box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+        }
+
+        .js-code {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 6px;
+            margin: 15px;
+            box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+        }
+
+        .js-code:hover {
+            background: #ff0000;
+            box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+        }
+
+        /* paragraph */
+        p {
+            padding: 25px;
+            justify-content: center;
+        }
+
+        .code-container i {
+            font-size: 30px;
+            display: flex;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .per {
+            margin: 5px;
+            margin-left: 34%;
+            float: left;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .fa-html5 {
+            color: rgb(5, 202, 15);
+        }
+
+        .fa-css3-alt {
+            color: rgb(0, 21, 214);
+        }
+
+        .fa-js {
+            color: yellow;
+        }
+
+        /* resopsive */
+        @media(max-width:650px) {
+            .code-container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .container {
+                width: 95%;
+                height: 26vh;
+                margin-top: 20%;
+                background-color: rgba(255, 255, 255, 0.2);
+                border-radius: 14px;
+
+            }
+
+            .logo {
+                width: 11%;
+                font-size: 20px;
+                text-align: center;
+                margin-top: 60px;
+                margin-left: 10px;
+            }
+
+            .icons {
+                display: flex;
+                margin-left: 10px;
+                margin-top: 60px;
+                height: 10px;
+            }
+
+            .fa-angle-left {
+                font-size: 15px;
+                color: aliceblue;
+            }
+
+            .fa-angle-right {
+                font-size: 15px;
+                color: aliceblue;
+            }
+
+            .fa-house-chimney {
+                display: flex;
+                font-size: 15px;
+                color: aliceblue;
+            }
+        }
+
+        @media (max-width:280px) {
+            .logo {
+                width: 12%;
+                font-size: 15px;
+                text-align: center;
+                margin-top: 60px;
+                margin-left: 20px;
+
+            }
+
+            .icons {
+                margin-left: 8px;
+                margin-top: 60px;
+                height: 10px;
+            }
+
+            .fa-angle-left {
+                font-size: 10px;
+                color: aliceblue;
+
+            }
+
+            .fa-angle-right {
+                font-size: 10px;
+                color: aliceblue;
+            }
+
+            .fa-house-chimney {
+                font-size: 10px;
+                color: aliceblue;
+                padding-left: 100%;
+
+            }
+
+        }
+    </style>
+    <!-- full container -->
+    <div class="container">
+        <nav>
+            <!-- font awesome icons -->
+            <div class="icons">
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-angle-left"></i></a></li>
+                    <li><a href="service.html"><i class="fa-solid fa-angle-right"></i></a></li>
+                    <li><a href="index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
+                </ul>
+            </div>
+            <!-- logo name -->
+            <div class="logo">ABOUT</div>
+        </nav>
+        <!-- skills icon + paragraph -->
+        <div class="code-container">
+            <div class="html-code">
+                <div class="per">100%</div><i class="fa-solid fa-code"></i><i class="fa-brands fa-html5"></i>
+                <p>HTML stands for Hyper Text Markup Language . HTML is the standard markup language for creating Web
+                    pages.</p>
+            </div>
+
+            <div class="css-code">
+                <div class="per">90%</div><i class="fa-solid fa-code"></i><i class="fa-brands fa-css3-alt"></i>
+                <p>CSS stands for Cascading Style Sheets ·CSS describes how HTML elements are to be
+                    displayed on screen, paper, or in other media ·</p>
+            </div>
+
+            <div class="js-code">
+                <div class="per">80%</div><i class="fa-solid fa-code"></i><i class="fa-brands fa-js"></i>
+                <p> JavaScript is a scripting language that enables you to create dynamically updating content,
+                    animate images, and pretty much ...</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

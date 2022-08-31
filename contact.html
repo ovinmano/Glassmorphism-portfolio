@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>contact</title>
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Css Style -->
+    <style>
+        /* font-family poppins */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to right, rgb(15, 0, 231), rgba(156, 1, 1, 0.712));
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-container {
+            width: 95%;
+            height: 16vh;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 14px;
+            margin-bottom: 75vh;
+            justify-content: space-between;
+            box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+        }
+
+        .contact-container:hover {
+            background: #ff0000;
+            box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+        }
+
+        .icons {
+            display: inline-block;
+            justify-content: space-between;
+            margin: 35px;
+            position: relative;
+        }
+
+        .fa-angle-left {
+            justify-content: space-between;
+            font-size: 22px;
+            color: aliceblue;
+        }
+
+        .fa-angle-right {
+            padding-left: 20px;
+            justify-content: space-between;
+            font-size: 22px;
+            color: aliceblue;
+        }
+
+        .fa-house-chimney {
+            padding-left: 20px;
+            justify-content: space-between;
+            font-size: 22px;
+            color: aliceblue;
+        }
+
+        .logo {
+            display: inline-block;
+            justify-content: space-between;
+            margin: 25px;
+            margin-right: 42%;
+            position: relative;
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+        }
+
+        li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        nav {
+            width: 95%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+        }
+
+        .fa-angle-right:hover,
+        .fa-angle-left:hover,
+        .fa-house-chimney:hover,
+        .logo:hover {
+            color: black;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        /* login forms container */
+        .form-container {
+
+            padding: 20px;
+            margin-top: 10%;
+            margin-left: 57%;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 14px;
+            box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+        }
+
+        .form-container:hover {
+            background: #ff0000;
+            box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+        }
+
+        .name {
+            padding: 10%;
+        }
+
+        .input-container {
+            margin-left: 10%;
+            background: rgba(255, 255, 255, 0.5);
+            border: none;
+            outline: none;
+            font-size: 15px;
+        }
+
+        #fname {
+            margin-top: 20px;
+            border-radius: 3px;
+
+        }
+
+        #lname {
+            margin-top: 15px;
+            border-radius: 3px;
+        }
+
+        #email {
+            margin-top: 15px;
+            margin-left: 14.5%;
+            border-radius: 3px;
+
+        }
+
+        #pass {
+            margin-top: 15px;
+            margin-left: 11.5%;
+            border-radius: 3px;
+        }
+
+        .submit {
+            margin-top: 7%;
+            margin-left: 44%;
+            font-size: 15px;
+            padding: 6px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit:hover {
+            background: aqua;
+        }
+
+        /*my address container */
+        .my-address {
+            width: 42%;
+            padding: 20px;
+            transform: translateY(-100%);
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 14px;
+            box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+        }
+
+        .my-address:hover {
+            background: #ffffff;
+            box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+
+        }
+
+        h3 {
+            padding-bottom: 8px;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 12px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+
+        h5 {
+            margin-left: 10px;
+        }
+
+        .fa-phone,
+        .fa-envelope-circle-check,
+        .fa-address-book {
+            margin-left: 10px;
+        }
+
+        .icon-links {
+            text-align: center;
+            font-size: 22px;
+            margin-top: 20px;
+        }
+
+        .fa-linkedin {
+            margin-right: 30px;
+            color: blue;
+
+        }
+
+        .fa-github {
+            margin-right: 30px;
+            color: #171515;
+
+        }
+
+        .fa-square-instagram {
+            margin-right: 30px;
+            color: #bc2a8d;
+
+        }
+
+        .fa-square-twitter {
+            margin-right: 10px;
+            color: #00acee;
+
+        }
+
+        .login {
+            padding: 20px;
+        }
+
+        /* responsive screen */
+        @media (max-width:650px) {
+            body {
+                height: 150vh;
+                margin-top: -20%;
+            }
+
+            .contact-container {
+                width: 75%;
+                height: 12vh;
+                background-color: rgba(255, 255, 255, 0.2);
+                border-radius: 14px;
+                margin-bottom: 75vh;
+                justify-content: space-between;
+                box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+            }
+
+            .contact-container:hover {
+                background: #ff0000;
+                box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+            }
+
+            .icons {
+                display: inline-block;
+                justify-content: space-between;
+                margin: 25px;
+                position: relative;
+            }
+
+            .fa-angle-left {
+                justify-content: space-between;
+                font-size: 12px;
+                color: aliceblue;
+            }
+
+            .fa-angle-right {
+                padding-left: 15px;
+                justify-content: space-between;
+                font-size: 12px;
+                color: aliceblue;
+            }
+
+            .fa-house-chimney {
+                padding-left: 20px;
+                justify-content: space-between;
+                font-size: 12px;
+                color: aliceblue;
+            }
+
+            .logo {
+                display: inline-block;
+                justify-content: space-between;
+                margin: 25px;
+                margin-right: 42%;
+                position: relative;
+                font-size: 12px;
+                font-weight: bold;
+                color: white;
+            }
+
+            .fa-angle-right:hover,
+            .fa-angle-left:hover,
+            .fa-house-chimney:hover,
+            .logo:hover {
+                color: black;
+                cursor: pointer;
+                transition: 0.2s;
+            }
+
+            .form-container {
+                width: 92%;
+                padding: 10px;
+                margin-top: 10%;
+                margin-left: 3%;
+                background-color: rgba(255, 255, 255, 0.2);
+                border-radius: 14px;
+                box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+            }
+
+            .form-container:hover {
+                background: #ff0000;
+                box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+            }
+
+            .name {
+                padding: 8%;
+            }
+
+            .input-container {
+                margin-left: 8%;
+                background: rgba(255, 255, 255, 0.5);
+                border: none;
+                outline: none;
+                font-size: 12px;
+            }
+
+            #fname {
+                margin-top: 8px;
+                border-radius: 3px;
+
+            }
+
+            #lname {
+                margin-top: 8px;
+                border-radius: 3px;
+            }
+
+            #email {
+                margin-top: 8px;
+                border-radius: 3px;
+                margin-left: 12%;
+
+            }
+
+            #pass {
+                margin-top: 8px;
+                margin-left: 9%;
+                border-radius: 3px;
+            }
+
+            .submit {
+                margin-top: 4%;
+                margin-left: 44%;
+                font-size: 10px;
+                padding: 7px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .submit:hover {
+                background: aqua;
+            }
+
+            .my-address {
+                width: 92%;
+                margin-left: 4%;
+                padding: 15px;
+                transform: translateY(9%);
+                background-color: rgba(255, 255, 255, 0.2);
+                border-radius: 14px;
+                box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+            }
+
+            .my-address:hover {
+                background: #ffffff;
+                box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+
+            }
+
+            h3 {
+                padding-bottom: 8px;
+                font-size: 12px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 11px;
+                margin-bottom: 10px;
+                margin-left: 10px;
+            }
+
+            h5 {
+                margin-left: 10px;
+            }
+
+            .fa-phone,
+            .fa-envelope-circle-check,
+            .fa-address-book {
+                margin-left: 10px;
+            }
+
+            .icon-links {
+                text-align: center;
+                font-size: 15px;
+                margin-top: 20px;
+            }
+
+            .fa-linkedin {
+                margin-right: 30px;
+                color: blue;
+
+            }
+
+            .fa-github {
+                margin-right: 30px;
+                color: #171515;
+
+            }
+
+            .fa-square-instagram {
+                margin-right: 30px;
+                color: #bc2a8d;
+
+            }
+
+            .fa-square-twitter {
+                margin-right: 10px;
+                color: #00acee;
+
+            }
+
+            .login {
+                padding: 20px;
+            }
+
+        }
+
+        /* responsive screen */
+        @media(max-width:496px) {
+            body {
+                height: 190vh;
+                margin-top: -60%;
+            }
+
+            .contact-container {
+                width: 75%;
+                height: 12vh;
+                background-color: rgba(255, 255, 255, 0.2);
+                border-radius: 14px;
+                margin-bottom: 75vh;
+                justify-content: space-between;
+                box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+            }
+
+            .contact-container:hover {
+                background: #ff0000;
+                box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+            }
+
+            .icons {
+                display: inline-block;
+                justify-content: space-between;
+                margin: 15px;
+                position: relative;
+            }
+
+            .fa-angle-left {
+                justify-content: space-between;
+                font-size: 10px;
+                color: aliceblue;
+            }
+
+            .fa-angle-right {
+                padding-left: 8px;
+                justify-content: space-between;
+                font-size: 10px;
+                color: aliceblue;
+            }
+
+            .fa-house-chimney {
+                padding-left: 11px;
+                justify-content: space-between;
+                font-size: 8px;
+                color: aliceblue;
+            }
+
+            .logo {
+                display: inline-block;
+                justify-content: space-between;
+                margin: 25px;
+                margin-right: 42%;
+                position: relative;
+                font-size: 10px;
+                font-weight: bold;
+                color: white;
+            }
+
+            .fa-angle-right:hover,
+            .fa-angle-left:hover,
+            .fa-house-chimney:hover,
+            .logo:hover {
+                color: black;
+                cursor: pointer;
+                transition: 0.2s;
+            }
+
+            .form-container {
+
+                padding: 8px;
+                margin-top: 8%;
+                margin-left: 7%;
+                background-color: rgba(255, 255, 255, 0.2);
+                border-radius: 14px;
+                box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+            }
+
+            .form-container:hover {
+                background: #ff0000;
+                box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+            }
+
+            .name {
+                padding: 7%;
+                font-size: 13px;
+            }
+
+            .input-container {
+                width: 63%;
+                margin-left: 5%;
+                background: rgba(255, 255, 255, 0.5);
+                border: none;
+                outline: none;
+                font-size: 12px;
+            }
+
+            #fname {
+                margin-top: 6px;
+                border-radius: 3px;
+
+            }
+
+            #lname {
+                margin-top: 6px;
+                border-radius: 3px;
+            }
+
+            #email {
+                margin-top: 6px;
+                border-radius: 3px;
+                margin-left: 5%;
+
+            }
+
+            #pass {
+                margin-top: 6px;
+                margin-left: 5%;
+                border-radius: 3px;
+            }
+
+            .submit {
+                margin-top: 4%;
+                margin-left: 36%;
+                font-size: 10px;
+                padding: 7px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .submit:hover {
+                background: aqua;
+            }
+
+            .my-address {
+                width: 92%;
+                margin-left: 6%;
+                padding: 10px;
+                transform: translateY(9%);
+                background-color: rgba(255, 255, 255, 0.2);
+                border-radius: 14px;
+                box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+            }
+
+            .my-address:hover {
+                background: #ffffff;
+                box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+
+            }
+
+            h3 {
+                padding-bottom: 8px;
+                font-size: 12px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 11px;
+                margin-bottom: 10px;
+                margin-left: -3px;
+
+            }
+
+            h5 {
+                margin-left: -3px;
+                font-size: 12px;
+            }
+
+            .fa-phone,
+            .fa-envelope-circle-check,
+            .fa-address-book {
+                margin-left: 10px;
+            }
+
+            .icon-links {
+                text-align: center;
+                font-size: 15px;
+                margin-top: 20px;
+            }
+
+            .fa-linkedin {
+                margin-right: 30px;
+                color: blue;
+
+            }
+
+            .fa-github {
+                margin-right: 30px;
+                color: #171515;
+
+            }
+
+            .fa-square-instagram {
+                margin-right: 30px;
+                color: #bc2a8d;
+
+            }
+
+            .fa-square-twitter {
+                margin-right: 10px;
+                color: #00acee;
+
+            }
+
+            .login {
+                padding: 20px;
+            }
+
+        }
+    </style>
+    <div class="contact-container">
+        <nav>
+            <!-- font awesome icons -->
+            <div class="icons">
+                <ul>
+                    <li><a href="service.html" .html"><i class="fa fa-angle-left"></i></a></li>
+                    <li><a href="index.html"><i class="fa-solid fa-angle-right"></i></a></li>
+                    <li><a href="index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
+                </ul>
+            </div>
+            <!-- logo name -->
+            <div class="logo">CONTACT</div>
+        </nav>
+        <!-- login form container -->
+        <form class="form-container" name="login">
+            <h3 class="login">login</h3>
+            <div>
+                <label class="name">First name</label>
+                <input id="fname" class="input-container" type="text" name="fname" placeholder="first name" required>
+            </div>
+            <div>
+                <label class="name">Last name</label>
+                <input id="lname" class="input-container" type="text" name="lname" placeholder="last name" required>
+            </div>
+            <div>
+                <label class="name" for="email">Email Id</label>
+                <input id="email" class="input-container" type="email" name="email" placeholder="mano12@gamil.com"
+                    required>
+            </div>
+            <div>
+                <label class="name">Password</label>
+                <input id="pass" class="input-container" type="password" name="pass" placeholder="Enter your password"
+                    required>
+            </div>
+            <div>
+                <button class="submit">Submit</button>
+            </div>
+        </form>
+        <!--my address and socialmedia links -->
+        <div class="my-address">
+            <div class="phone">
+                <h3>MANOJ KUMAR</h3>
+                <i class="fa-solid fa-phone"></i>
+                <h5>phone (or) whatsapp</h5>
+                <p class="phn">7339072404</p>
+            </div>
+            <div class="mail">
+                <i class="fa-solid fa-envelope-circle-check"></i>
+                <h5>Gmail</h5>
+                <p class="mail-id">manojrabeal***@gmail.com</p>
+            </div>
+            <div class="address">
+                <i class="fa-solid fa-address-book"></i>
+                <h5>ADDRESS</h5>
+                <p class="add">Sivagangai(dt),thirupathur(taluk),pin code-630 211</p>
+            </div>
+            <div class="icon-links">
+                <ul>
+                    <!-- active social media links -->
+                    <li><a href="https://www.linkedin.com/in/manoj-kumar-412934244"><i
+                                class="fa-brands fa-linkedin"></a></i></li>
+                    <li><a href="https://github.com/ovinmano"><i class="fa-brands fa-github"></a></i></li>
+                    <li><a href="https://instagram.com/ovin_mano?igshid=YmMyMTA2M2Y="><i
+                                class="fa-brands fa-square-instagram"></a></i></li>
+                    <li><a href="https://twitter.com/ovinmano?t=hFcTjOldRPUOqGkYzUFiUQ&s=09"><i
+                                class="fa-brands fa-square-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+        // js code login submit
+
+        const formEl = document.forms.login;
+
+        const btnEl = document.querySelector('form button');
+
+        formEl.addEventListener('submit', (event) => {
+
+            event.preventDefault();
+
+            const { fname, lname, email, pass } = formEl.elements;
+            alert("Login Success..!");
+        });
+    </script>
+</body>
+
+</html>

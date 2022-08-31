@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>service</title>
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Css Style -->
+    <style>
+        /* font-family */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to right, rgb(15, 0, 231), rgba(156, 1, 1, 0.712));
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 95%;
+            height: 16vh;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 14px;
+            margin-bottom: 75vh;
+            justify-content: space-between;
+            box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+        }
+
+        .container:hover {
+            background: #ff0000;
+            box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+        }
+
+        .icons {
+            display: inline-block;
+            justify-content: space-between;
+            margin: 35px;
+            position: relative;
+        }
+
+        .fa-angle-left {
+            justify-content: space-between;
+            font-size: 22px;
+            color: aliceblue;
+        }
+
+        .fa-angle-right {
+            padding-left: 20px;
+            justify-content: space-between;
+            font-size: 22px;
+            color: aliceblue;
+        }
+
+        .fa-house-chimney {
+            padding-left: 20px;
+            justify-content: space-between;
+            font-size: 22px;
+            color: aliceblue;
+        }
+
+        .logo {
+            display: inline-block;
+            justify-content: space-between;
+            margin: 25px;
+            margin-right: 42%;
+            position: relative;
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+        }
+
+        li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        nav {
+            width: 95%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+        }
+
+        .fa-angle-right:hover,
+        .fa-angle-left:hover,
+        .fa-house-chimney:hover,
+        .logo:hover {
+            color: black;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .service-container {
+            margin-top: 3%;
+            display: flex;
+            padding: 10px;
+        }
+
+        h2 {
+            text-align: justify;
+            margin-left: 5%;
+        }
+
+        .web-design {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 12px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+        }
+
+        .web-design:hover {
+            background: #ff0000;
+            box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+        }
+
+        .logo-design {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 12px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+        }
+
+        .logo-design:hover {
+            background: #ff0000;
+            box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+        }
+
+        .graphic-design {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 12px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+        }
+
+        .graphic-design:hover {
+            background: #ff0000;
+            box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+        }
+
+        .responsive-design {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 12px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+        }
+
+        .responsive-design:hover {
+            background: #ff0000;
+            box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+        }
+
+        i.fa-code {
+            font-size: 20px;
+            margin-left: 41%;
+            margin-top: 15px;
+        }
+
+        i.fa-sailboat {
+            margin-left: 41%;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+
+        i.fa-gripfire {
+            margin-left: 41%;
+            font-size: 22px;
+            margin-top: 15px;
+
+        }
+
+        i.fa-mobile-screen-button {
+            margin-left: 41%;
+            font-size: 22px;
+            margin-top: 15px;
+        }
+
+        .star-rating {
+            background: rgba(255, 255, 255, 0.2);
+            display: flex;
+            margin-top: 80px;
+            padding: 13px;
+            margin-left: 60%;
+            width: 260px;
+            border-radius: 10px;
+            box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+            height: 90px;
+        }
+
+        .star-rating:hover {
+            box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+        }
+
+
+
+        .fa-star {
+            font-size: 20px;
+            padding: 5px;
+            margin-top: 15px;
+            color: white;
+        }
+
+        .fa-star:hover {
+            color: #ff0000;
+        }
+
+        .btn {
+            display: none;
+            font-size: 15px;
+            padding: 3px;
+            background: rgba(255, 255, 255, 0.6);
+            cursor: pointer;
+            border: none;
+            margin-top: 15px;
+            height: 30px;
+            margin-left: 5px;
+        }
+
+        .rating-content {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+            height: 90px;
+            margin-top: 6%;
+            margin-left: 20px;
+            display: flex;
+            position: absolute;
+            padding: 10px;
+        }
+
+        h4 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .rating-content:hover {
+            background: #ff0000;
+            box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+        }
+
+        @media (max-width:680px) {
+            .container {
+                width: 95%;
+                height: 16vh;
+                background-color: rgba(255, 255, 255, 0.2);
+                border-radius: 14px;
+                margin-bottom: 75vh;
+                box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+            }
+
+            .star-rating {
+                background: rgba(255, 255, 255, 0.2);
+                display: flex;
+                margin-top: 80px;
+                padding: 10px;
+                margin-left: 50%;
+                width: 230px;
+                border-radius: 10px;
+                box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+                height: 80px;
+            }
+
+            .fa-star {
+                font-size: 15px;
+                padding: 5px;
+                margin-top: 15px;
+                color: white;
+            }
+
+            .star-rating:hover {
+                box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+            }
+
+            .fa-star:hover {
+                color: #ff0000;
+            }
+
+            .btn {
+                display: none;
+                font-size: 10px;
+                padding: 3px;
+                background: rgba(255, 255, 255, 0.6);
+                cursor: pointer;
+                border: none;
+                margin-top: 15px;
+                height: 30px;
+                margin-left: 9px;
+            }
+
+            .service-container {
+                margin-top: 5%;
+                display: flex;
+                padding: 8px;
+                flex-direction: column;
+            }
+
+            .web-design {
+                background: rgba(255, 255, 255, 0.2);
+                padding: 10px;
+                margin: 9px;
+                border-radius: 10px;
+                box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+            }
+
+            .web-design:hover {
+                background: #ff0000;
+                box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+            }
+
+            .logo-design {
+                background: rgba(255, 255, 255, 0.2);
+                padding: 10px;
+                margin: 8px;
+                border-radius: 10px;
+                box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+            }
+
+            .logo:hover {
+                background: #ff0000;
+                box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+            }
+
+            .graphic-design {
+                background: rgba(255, 255, 255, 0.2);
+                padding: 10px;
+                margin: 8px;
+                border-radius: 10px;
+                box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+            }
+
+            .graphic-design:hover {
+                background: #ff0000;
+                box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+            }
+
+            .responsive-design {
+                background: rgba(255, 255, 255, 0.2);
+                padding: 10px;
+                margin: 8px;
+                border-radius: 10px;
+                box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+            }
+
+            .responsive-design:hover {
+                background: #ff0000;
+                box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+            }
+
+            .fa-angle-left {
+                justify-content: space-between;
+                font-size: 18px;
+                color: aliceblue;
+            }
+
+            .fa-angle-right {
+                padding-left: 15px;
+                justify-content: space-between;
+                font-size: 18px;
+                color: aliceblue;
+            }
+
+            .fa-house-chimney {
+                padding-left: 15px;
+                font-size: 18px;
+                color: aliceblue;
+            }
+
+            .logo {
+                display: inline-block;
+                justify-content: space-between;
+                margin: 25px;
+                margin-right: 42%;
+                position: relative;
+                font-size: 25px;
+                font-weight: bold;
+                color: white;
+            }
+
+            .rating-content {
+                background: rgba(255, 255, 255, 0.2);
+                border-radius: 10px;
+                box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+                height: 60px;
+                margin-top: 3%;
+                margin-left: 20px;
+                display: flex;
+                position: absolute;
+                padding: 7px;
+            }
+
+            h4 {
+                font-size: 13px;
+                text-align: center;
+                margin-top: 10px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+
+            .rating-content:hover {
+                background: #ff0000;
+                box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+            }
+        }
+
+        @media (max-width:550px) {
+            .container {
+                width: 95%;
+                height: 16vh;
+                background-color: rgba(255, 255, 255, 0.2);
+                border-radius: 14px;
+                margin-bottom: 65vh;
+                box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+            }
+
+            .star-rating {
+                background: rgba(255, 255, 255, 0.2);
+                display: flex;
+                margin-top: 45%;
+                padding: 9px;
+                margin-left: 18%;
+                width: 180px;
+                border-radius: 10px;
+                box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+                height: 80px;
+            }
+
+            .star-rating:hover {
+                box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+            }
+
+            .fa-star {
+                font-size: 10px;
+                padding: 5px;
+                margin-top: 18px;
+                color: white;
+            }
+
+            .star-rating:hover {
+                box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+            }
+
+            .fa-star:hover {
+                color: #ff0000;
+            }
+
+            .btn {
+                display: none;
+                font-size: 8px;
+                padding: 3px;
+                background: rgba(255, 255, 255, 0.6);
+                cursor: pointer;
+                border: none;
+                margin-top: 15px;
+                height: 30px;
+                margin-left: 9px;
+            }
+
+            .service-container {
+                margin-top: 4%;
+                display: flex;
+                padding: 8px;
+                flex-direction: column;
+            }
+
+            .web-design {
+                background: rgba(255, 255, 255, 0.2);
+                padding: 15px;
+                margin: 7px;
+                border-radius: 10px;
+                box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+            }
+
+            .web-design:hover {
+                background: #ff0000;
+                box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+
+            }
+
+            .logo-design {
+                background: rgba(255, 255, 255, 0.2);
+                padding: 15px;
+                margin: 7px;
+                border-radius: 10px;
+                box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+            }
+
+            .logo-design:hover {
+                background: #ff0000;
+                box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+            }
+
+            .graphic-design {
+                background: rgba(255, 255, 255, 0.2);
+                padding: 15px;
+                margin: 7px;
+                border-radius: 10px;
+                box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+            }
+
+            .graphic-design:hover {
+                background: #ff0000;
+                box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+            }
+
+            .responsive-design {
+                background: rgba(255, 255, 255, 0.2);
+                padding: 15px;
+                margin: 7px;
+                border-radius: 10px;
+                box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+            }
+
+            .responsive-design:hover {
+                background: #ff0000;
+                box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+            }
+
+            .fa-angle-left {
+                justify-content: space-between;
+                font-size: 12px;
+                color: aliceblue;
+            }
+
+            .fa-angle-right {
+                padding-left: 12px;
+                justify-content: space-between;
+                font-size: 12px;
+                color: aliceblue;
+            }
+
+            .fa-house-chimney {
+                padding-left: 15px;
+                font-size: 12px;
+                color: aliceblue;
+            }
+
+            .logo {
+                display: inline-block;
+                justify-content: space-between;
+                margin: 25px;
+                position: relative;
+                font-size: 18px;
+                font-weight: bold;
+                color: white;
+                margin-top: 35px;
+            }
+
+            .rating-content {
+                background: rgba(255, 255, 255, 0.2);
+                border-radius: 10px;
+                box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+                height: 60px;
+                margin-top: 14%;
+                margin-left: 18%;
+                display: flex;
+                position: absolute;
+                padding: 7px;
+            }
+
+            h4 {
+                font-size: 11px;
+                text-align: center;
+                margin-top: 12px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+
+            .rating-content:hover {
+                background: #ff0000;
+                box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+            }
+        }
+    </style>
+    <!-- full container -->
+    <div class="container">
+        <nav>
+            <!-- font awesome icons -->
+            <div class="icons">
+                <ul>
+                    <li><a href="about.html"><i class="fa fa-angle-left"></i></a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i></a></li>
+                    <li><a href="index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
+                </ul>
+            </div>
+            <!-- logo name -->
+            <div class="logo">SERVICE</div>
+        </nav>
+        <div class="rating-content">
+            <h4>Give Me Your Star Rating..!</h4>
+        </div>
+        <!--js star Rating click event -->
+        <div class="star-rating">
+            <i id="star1" onclick="star1();" class="fa-solid fa-star"></i>
+            <i id="star2" onclick="star2();" class="fa-solid fa-star"></i>
+            <i id="star3" onclick="star3();" class="fa-solid fa-star"></i>
+            <i id="star4" onclick="star4();" class="fa-solid fa-star"></i>
+            <i id="star5" onclick="star5();" class="fa-solid fa-star"></i>
+            <!-- onlcick alert-->
+            <button class="btn" onclick="alert('Thanks For Rating Us')">submit</button>
+        </div>
+        <!-- service container -->
+        <div class="service-container">
+            <div class="web-design"><i class="fa-solid fa-code"></i><br><br>
+                <h2>Web Design</h2><br>
+                <p>Avail our services to devlop an <br> exceptional design to boost your <br>
+                    business via online presence</p>
+
+            </div>
+            <div class="logo-design"><i class="fa-solid fa-sailboat"></i><br><br>
+                <h2>Logo Design</h2><br>
+                <p>Our logo design graphically <br>represent the core process of your <br>
+                    bussiness in a very delicate way</p>
+
+            </div>
+            <div class="graphic-design"><i class="fa-brands fa-gripfire"></i><br><br>
+                <h2>Graphic Design</h2><br>
+                <p>Our diverse skillset and wide variety <br>of experience and talent is what <br>
+                    make as uniquely equipped</p>
+
+            </div>
+            <div class="responsive-design"><i class="fa-solid fa-mobile-screen-button"></i><br><br>
+                <h2>Resopsive Design</h2><br>
+                <p>With a resopsive ramework, we <br>can desin a website that will adapt <br>
+                    to fit any screen size of screen</p>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        // javaScript using star rating
+        const starEl1 = document.querySelector('#star1');
+        const starEl2 = document.querySelector('#star2');
+        const starEl3 = document.querySelector('#star3');
+        const starEl4 = document.querySelector('#star4');
+        const starEl5 = document.querySelector('#star5');
+        const btnEl = document.querySelector('.btn');
+
+        function star1() {
+            starEl1.style.color = '#ff0000';
+            starEl2.style.color = '#fff';
+            starEl3.style.color = '#fff';
+            starEl4.style.color = '#fff';
+            starEl5.style.color = '#fff';
+            btnEl.style.display = 'block'
+        }
+        function star2() {
+            starEl1.style.color = '#ff0000';
+            starEl2.style.color = '#ff0000';
+            starEl3.style.color = '#fff';
+            starEl4.style.color = '#fff';
+            starEl5.style.color = '#fff';
+            btnEl.style.display = 'block'
+        }
+        function star3() {
+            starEl1.style.color = '#ff0000';
+            starEl2.style.color = '#ff0000';
+            starEl3.style.color = '#ff0000';
+            starEl4.style.color = '#fff';
+            starEl5.style.color = '#fff';
+            btnEl.style.display = 'block'
+        }
+        function star4() {
+            starEl1.style.color = '#ff0000';
+            starEl2.style.color = '#ff0000';
+            starEl3.style.color = '#ff0000';
+            starEl4.style.color = '#ff0000';
+            starEl5.style.color = '#fff';
+            btnEl.style.display = 'block'
+        }
+        function star5() {
+            starEl1.style.color = '#ff0000';
+            starEl2.style.color = '#ff0000';
+            starEl3.style.color = '#ff0000';
+            starEl4.style.color = 'ff0000';
+            starEl5.style.color = '#ff0000';
+            btnEl.style.display = 'block'
+        }
+    </script>
+
+</body>
+
+</html>
