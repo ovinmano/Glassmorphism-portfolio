@@ -196,8 +196,7 @@ h5 {
     font-weight: lighter;
 
 }
-
-@media screen and (max-width:900px) {
+@media(max-width:580px) {
     .nav-list {
         width: 40%;
     }
@@ -210,9 +209,34 @@ h5 {
         background-color: rgba(255, 255, 255, 0.2);
         box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
         margin-left: 15%;
-        height: 65%;
+        height: 75%;
     }
 
+    }
+
+
+
+
+@media(max-width:980px) {
+    .nav-list {
+        /* display: none; */
+        position: fixed;
+        top: 20vh;
+        right: 0;
+        flex-direction: column;
+        height: 63vh;
+        margin-top: 2.5%;
+        width: 25%;
+        transform: translateX(100%);
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 10px 0 10px 0;
+        transition: transform 0.6s;
+
+    }
+
+    .showIcon {
+        display: block;
+    }
     .pic {
         height: 20vh;
         margin-top: 10px;
@@ -231,29 +255,30 @@ h5 {
     h2 {
         background: rgba(255, 255, 255, 0.3);
         text-align: center;
-        margin-top: -23%;
-        width: 40%;
-        margin-left: 38%;
-        font-size: 17px;
+        margin-top: -4%;
+        width: 50%;
+        margin-left: 9%;
+        font-size: 25px;
         padding: 4px;
     }
 
     h3 {
         text-align: center;
-        margin-top: 6%;
+        margin-top: 9%;
         background: rgba(255, 255, 255, 0.3);
         width: 30%;
-        margin-left: 42%;
+        margin-left: 9.4%;
         color: #0d0513;
         padding: 2px;
-        font-size: 15.5px;
+        font-size: 22px;
     }
 
     h6 {
         text-align: center;
-        margin-left: 15%;
-        font-size: 16px;
-        margin-top: 18px;
+        margin-left: 1%;
+        font-size: 23px;
+        margin-top: 6%;
+        width: 90%;
         color: #000;
         font-weight: 500;
 
@@ -264,13 +289,14 @@ h5 {
         margin-top: 4%;
         background: rgba(255, 255, 255, 0.3);
         width: 25%;
-        margin-left: 44%;
+        font-size: 22px;
+        margin-left: 9%;
     }
 
     h5 {
         text-align: center;
-        margin-left: 13%;
-        font-size: 15.5px;
+        margin-left: -10%;
+        font-size: 22px;
         margin-top: 13px;
         color: rgb(0, 0, 0);
         font-weight: lighter;
@@ -297,185 +323,8 @@ h5 {
 
 }
 
-
-@media screen and (max-width:674px) {
-    .nav-list {
-        /* display: none; */
-        position: fixed;
-        top: 20vh;
-        right: 0;
-        flex-direction: column;
-        height: 75vh;
-        width: 40%;
-        transform: translateX(100%);
-        background-color: rgba(255, 255, 255, 0.2);
-        border-radius: 10px 0 10px 0;
-        transition: transform 0.6s;
-
-    }
-
-    .showIcon {
-        display: block;
-    }
-
-}
-
 .display {
     transform: translateX(0%);
-
-}
-
-@media only screen and (max-width:1350px) {}
-
-@media only screen and (max-width:700px) {
-    .details-container {
-        width: 50%;
-        padding: 15px;
-        border-radius: 6px;
-        margin: 15px;
-        background-color: rgba(255, 255, 255, 0.2);
-        box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
-        margin-left: 7%;
-        height: 75%;
-    }
-
-    .pic {
-        height: 16vh;
-    }
-
-    .pic img {
-        height: 90%;
-        margin-top: -10px;
-        margin-left: -35%;
-    }
-
-    img {
-        clip-path: circle(40%);
-
-    }
-
-    h2 {
-        background: rgba(255, 255, 255, 0.3);
-        text-align: center;
-        margin-top: -29%;
-        width: 50%;
-        margin-left: 38%;
-        font-size: 12px;
-        padding: 4px;
-    }
-
-    h3 {
-        text-align: center;
-        margin-top: 15%;
-        background: rgba(255, 255, 255, 0.3);
-        width: 40%;
-        margin-left: 7%;
-        color: #0d0513;
-        padding: 2px;
-        font-size: 13px;
-    }
-
-    h6 {
-        text-align: center;
-        margin-left: 6%;
-        font-size: 12px;
-        margin-top: 18px;
-        color: #000;
-        width: 60%;
-        font-weight: 600;
-
-    }
-
-    h4 {
-        text-align: center;
-        margin-top: 15%;
-        background: rgba(255, 255, 255, 0.3);
-        width: 37%;
-        margin-left: 7%;
-        font-size: 13px;
-    }
-
-    h5 {
-        text-align: center;
-        margin-left: 3%;
-        font-size: 12px;
-        margin-top: 28px;
-        color: rgb(0, 0, 0);
-        font-weight: 600;
-        width: 75%;
-
-    }
-
-    h2:hover {
-        background: #0394ce;
-        color: rgba(255, 255, 255, 0.925);
-        box-shadow: 2px -1px 4px 0px rgb(41, 52, 53);
-    }
-
-    h3:hover {
-        background: #0394ce;
-        color: rgba(255, 255, 255, 0.925);
-        box-shadow: 2px -1px 4px 0px rgb(41, 52, 53);
-    }
-
-    h4:hover {
-        background: #0394ce;
-        color: rgba(255, 255, 255, 0.925);
-        box-shadow: 2px -1px 4px 0px rgb(41, 52, 53);
-    }
-
-
-    .logo {
-        height: 15vh;
-        justify-content: space-between;
-        width: 300px;
-        align-items: center;
-        display: flex;
-        font-size: 40px;
-        font-weight: bold;
-        padding-left: 5px;
-    }
-
-    .container {
-
-        width: 90%;
-        height: 97vh;
-        background-color: rgba(255, 255, 255, 0.2);
-        border-radius: 14px;
-
-    }
-
-    .container:hover {
-        background: #ff0000;
-        box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
-
-    }
-
-    img {
-        position: relative;
-        width: 35%;
-        left: 28%;
-        bottom: 8%;
-
-
-    }
-
-
-}
-
-@media only screen and (max-width:600px) {
-
-
-    .logo {
-        height: 15vh;
-        justify-content: space-between;
-        width: 150px;
-        align-items: center;
-        display: flex;
-        font-size: 35px;
-        font-weight: bold;
-        padding-left: 5px;
-    }
 
 }
 
@@ -578,78 +427,6 @@ h5 {
         font-weight: bold;
         padding-left: 5px;
     }
-
-
-}
-
-@media only screen and (max-width:364px) {
-    .details-container {
-        height: 75%;
-    }
-
-    .pic {
-        height: 10vh;
-        margin-top: 10px;
-        margin-left: 10px;
-    }
-
-    .pic img {
-        height: 80%;
-    }
-
-    img {
-        clip-path: circle(45%);
-        size: 20px;
-    }
-
-    h6 {
-        text-align: center;
-        margin-left: 2%;
-        font-size: 10px;
-        margin-top: 18px;
-        color: #000;
-        width: 15%;
-        font-weight: 600;
-
-    }
-
-    h4 {
-        text-align: center;
-        margin-top: 15%;
-        background: rgba(255, 255, 255, 0.3);
-        width: 67%;
-        margin-left: 3%;
-        font-size: 10px;
-    }
-    h2:hover {
-        background: #0394ce;
-        color: rgba(255, 255, 255, 0.925);
-        box-shadow: 2px -1px 4px 0px rgb(41, 52, 53);
-    }
-    
-    h3:hover {
-        background: #0394ce;
-        color: rgba(255, 255, 255, 0.925);
-        box-shadow: 2px -1px 4px 0px rgb(41, 52, 53);
-    }
-    h4:hover {
-        background: #0394ce;
-        color: rgba(255, 255, 255, 0.925);
-        box-shadow: 2px -1px 4px 0px rgb(41, 52, 53);
-    }
-
-
-    .logo {
-        height: 15vh;
-        justify-content: space-between;
-        width: 100px;
-        align-items: center;
-        display: flex;
-        font-size: 20px;
-        font-weight: bold;
-        padding-left: 5px;
-    }
-
 
 
 }
