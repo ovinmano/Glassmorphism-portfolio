@@ -242,15 +242,18 @@
             padding: 20px;
         }
 
-      /* responsive screen */
-        @media (max-width:980px) {
+       /* responsive screen */
+        @media (orientation:portrait) and (max-width:980px)  {
+            body{
+                height: 160vh;
+            }
 
             .contact-container {
+                margin-top: -75%;
                 width: 90%;
-                height: 7vh;
+                height: 8vh;
                 background-color: rgba(255, 255, 255, 0.2);
                 border-radius: 14px;
-                margin-bottom: 75vh;
                 justify-content: space-between;
                 box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
             }
@@ -265,26 +268,26 @@
                 justify-content: space-between;
                 margin: 25px;
                 position: relative;
-                margin-top: 5%;
+                margin-top: 3%;
             }
 
             .fa-angle-left {
                 justify-content: space-between;
-                font-size: 22px;
+                font-size: 27px;
                 color: aliceblue;
             }
 
             .fa-angle-right {
                 padding-left: 15px;
                 justify-content: space-between;
-                font-size: 22px;
+                font-size: 27px;
                 color: aliceblue;
             }
 
             .fa-house-chimney {
                 padding-left: 20px;
                 justify-content: space-between;
-                font-size: 22px;
+                font-size: 27px;
                 color: aliceblue;
             }
 
@@ -294,10 +297,10 @@
                 margin: 25px;
                 margin-right: 42%;
                 position: relative;
-                font-size: 25px;
+                font-size: 28px;
                 font-weight: bold;
                 color: white;
-                margin-top: 4%;
+                margin-top: 2%;
             }
 
             .fa-angle-right:hover,
@@ -312,8 +315,9 @@
             .form-container {
                 width: 92%;
                 padding: 10px;
-                height: 32vh;
-                margin-top: 10%;
+                height: 43vh;
+                flex-direction: column;
+                margin-top: 20%;
                 margin-left: 3%;
                 background-color: rgba(255, 255, 255, 0.2);
                 border-radius: 14px;
@@ -351,7 +355,7 @@
             }
 
             #email {
-                margin-top:25px;
+                margin-top: 25px;
                 border-radius: 3px;
                 margin-left: 11.7%;
 
@@ -383,7 +387,7 @@
                 margin-left: 3%;
                 margin-top: 13%;
                 padding: 26px;
-                height: 32vh;
+                height: 42vh;
                 transform: translateY(9%);
                 background-color: rgba(255, 255, 255, 0.2);
                 border-radius: 14px;
