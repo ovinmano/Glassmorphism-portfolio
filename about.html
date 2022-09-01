@@ -184,35 +184,28 @@
             color: yellow;
         }
 
-               /* resopsive */
-        @media(max-width:980px) {
+           /* resopsive */
+        @media (orientation:portrait) and (max-width:980px) {
             .code-container {
                 display: flex;
                 flex-direction: column;
                 margin-top: 15%;
             }
 
-            .container {
-                width: 90%;
-                height: 8vh;
-                margin-top: 8%;
-                background-color: rgba(255, 255, 255, 0.2);
-                border-radius: 14px;
 
-            }
 
             .logo {
                 width: 11%;
                 font-size: 20px;
                 text-align: center;
-                margin-top: 55px;
+                margin-top: 25px;
                 margin-left: 10px;
             }
 
             .icons {
                 display: flex;
                 margin-left: 10px;
-                margin-top: 55px;
+                margin-top: 25px;
                 height: 10px;
             }
 
@@ -231,18 +224,94 @@
                 font-size: 15px;
                 color: aliceblue;
             }
-            .html-code{
+
+            .html-code {
                 margin-top: 10%;
-                height: 15vh;
+                height: 30%;
             }
-            .css-code{
+
+            .css-code {
                 margin-top: 10%;
-                height: 15vh;
+                height: 30%;
             }
-            .js-code{
-                height: 15vh;
+
+            .js-code {
+                height: 30vh;
                 margin-top: 10%;
             }
+
+            @media (orientation:landscape) and (max-width:360px) {}
+
+            .container {
+                background-color: rgba(255, 255, 255, 0.2);
+                border-radius: 16px;
+                margin-top: -15%;
+                justify-content: space-between;
+                box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+            }
+
+            .code-container {
+                display: flex;
+                flex-direction: column;
+                margin-top: 5%;
+            }
+
+            .container {
+                width: 80%;
+                height: 5%;
+                background-color: rgba(255, 255, 255, 0.2);
+                border-radius: 15px;
+
+            }
+
+            .logo {
+                width: 11%;
+                font-size: 20px;
+                text-align: center;
+                margin-top: 25px;
+                margin-left: 10px;
+                letter-spacing: 5px;
+            }
+
+            .icons {
+                display: flex;
+                margin-left: 10px;
+                margin-top: 25px;
+                height: 10px;
+            }
+
+            .fa-angle-left {
+                font-size: 19px;
+                color: aliceblue;
+            }
+
+            .fa-angle-right {
+                font-size: 19px;
+                color: aliceblue;
+            }
+
+            .fa-house-chimney {
+                display: flex;
+                font-size: 19px;
+                color: aliceblue;
+            }
+
+            .html-code {
+                margin-top: 10%;
+                height: 20vh;
+
+            }
+
+            .css-code {
+                margin-top: 20%;
+                height: 20vh;
+            }
+
+            .js-code {
+                height: 20vh;
+                margin-top: 20%;
+            }
+
         }
     </style>
     <!-- full container -->
