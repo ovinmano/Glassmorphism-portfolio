@@ -73,6 +73,7 @@ nav {
     height: 6vh;
     width: 20px;
     transform: translateY(105%);
+    margin-right: 23px;
     display: none;
     font-size: 30px;
 
