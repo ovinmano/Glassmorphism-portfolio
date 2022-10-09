@@ -48,7 +48,7 @@
         .icons {
             display: inline-block;
             justify-content: space-between;
-            margin: 35px;
+            margin: 30px;
             position: relative;
         }
 
@@ -108,7 +108,7 @@
         .form-container {
 
             padding: 20px;
-            margin-top: 10%;
+            margin-top: 3%;
             margin-left: 57%;
             background-color: rgba(255, 255, 255, 0.2);
             border-radius: 14px;
@@ -116,12 +116,12 @@
         }
 
         .form-container:hover {
-            background: #ff0000;
-            box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+            background: #0a65dd;
+            box-shadow: 4px -3px 9px 0px rgb(27, 49, 49);
         }
 
         .name {
-            padding: 10%;
+            padding: 8%;
         }
 
         .input-container {
@@ -145,7 +145,7 @@
 
         #email {
             margin-top: 15px;
-            margin-left: 14.5%;
+            margin-left: 15.5%;
             border-radius: 3px;
 
         }
@@ -241,11 +241,6 @@
         .login {
             padding: 20px;
         }
-         .bubbles img {
-            width: 50px;
-            animation: bubble 7s linear infinite;
-        }
-
         
         .bubbles img {
             width: 50px;
@@ -258,7 +253,8 @@
             align-items: center;
             justify-content: space-between;
             position: absolute;
-            bottom: -60vh;
+            bottom: -60px;
+            position: fixed;
         }
 
         @keyframes bubble {
@@ -319,8 +315,7 @@
             width: 25px;
         }
 
-
-       /* responsive screen */
+        /* responsive screen */
         @media (orientation:portrait) and (max-width:980px)  {
             body{
                 height: 160vh;
@@ -334,11 +329,6 @@
                 border-radius: 14px;
                 justify-content: space-between;
                 box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
-            }
-
-            .contact-container:hover {
-                background: #ff0000;
-                box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
             }
 
             .icons {
@@ -401,12 +391,6 @@
                 border-radius: 14px;
                 box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
             }
-
-            .form-container:hover {
-                background: #ff0000;
-                box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
-            }
-
             .name {
                 padding: 8%;
                 font-size: 22px;
@@ -536,9 +520,7 @@
             }
 
         }
-
-       
-
+        
     </style>
     <div class="contact-container">
         <nav>
@@ -610,7 +592,7 @@
             </div>
         </div>
     </div>
-      <div class="bubbles">
+    <div class="bubbles">
         <img src="bubble.png">
         <img src="bubble.png">
         <img src="bubble.png">
@@ -620,7 +602,7 @@
         <img src="bubble.png">
     </div>
     <script>
-        
+
         // js code login submit
 
         const formEl = document.forms.login;
@@ -638,3 +620,4 @@
 </body>
 
 </html>
+
