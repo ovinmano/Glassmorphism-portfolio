@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -35,7 +36,7 @@
             height: 16vh;
             background-color: rgba(255, 255, 255, 0.2);
             border-radius: 14px;
-            margin-bottom: 75vh;
+            margin-bottom: 85vh;
             justify-content: space-between;
             box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
         }
@@ -110,7 +111,6 @@
             display: flex;
             justify-content: space-between;
         }
-
         .html-code {
             padding: 22px;
             border-radius: 6px;
@@ -118,13 +118,11 @@
             background-color: rgba(255, 255, 255, 0.2);
             box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
         }
-
         .html-code:hover {
-            background: #ff0000;
-            box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+            background: #0a65dd;
+            box-shadow: 4px -3px 9px 0px rgb(27, 49, 49);
 
         }
-
         .css-code {
             background-color: rgba(255, 255, 255, 0.2);
             padding: 20px;
@@ -132,12 +130,10 @@
             margin: 15px;
             box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
         }
-
         .css-code:hover {
-            background: #ff0000;
-            box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+            background: #0a65dd;
+            box-shadow: 4px -3px 9px 0px rgb(27, 49, 49);
         }
-
         .js-code {
             background-color: rgba(255, 255, 255, 0.2);
             padding: 10px;
@@ -145,25 +141,32 @@
             margin: 15px;
             box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
         }
-
         .js-code:hover {
-            background: #ff0000;
-            box-shadow: 4px -3px 9px 0px rgb(0, 238, 255);
+            background: #0a65dd;
+            box-shadow: 4px -3px 9px 0px rgb(27, 49, 49);
         }
-
+        .react-code{
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 6px;
+            margin: 15px;
+            box-shadow: 4px -3px 9px 0px rgb(187, 181, 241);
+        }
+        .react-code:hover {
+            background: #0a65dd;
+            box-shadow: 4px -3px 9px 0px rgb(27, 49, 49);
+        }
         /* paragraph */
         p {
             padding: 25px;
             justify-content: center;
         }
-
         .code-container i {
             font-size: 30px;
             display: flex;
             text-align: center;
             padding: 10px;
         }
-
         .per {
             margin: 5px;
             margin-left: 34%;
@@ -175,15 +178,29 @@
         .fa-html5 {
             color: rgb(5, 202, 15);
         }
+        .fa-html5:hover{
+            color: white;
+        }
 
         .fa-css3-alt {
             color: rgb(0, 21, 214);
         }
-
+        .fa-css3-alt:hover{
+            color: rgb(255, 255, 255);
+        }
         .fa-js {
             color: yellow;
         }
-          .bubbles img {
+        .fa-js:hover {
+            color: rgb(255, 255, 255);
+        }
+        .fa-react {
+            color: blue;
+        }
+        .fa-react:hover {
+            color: rgb(255, 255, 255);
+        }
+        .bubbles img {
             width: 50px;
             animation: bubble 7s linear infinite;
         }
@@ -194,9 +211,23 @@
             align-items: center;
             justify-content: space-between;
             position: absolute;
-            bottom: -70px;
+            bottom: -60px;
+            position: fixed;
         }
-
+        /* percentage */
+        .per{
+            color: azure;
+        }
+        .per:hover{
+            color: #000;
+        }
+        .fa-code{
+            color: aliceblue;
+        }
+        .fa-code:hover{
+            color: rgb(0, 0, 0);
+        }
+     
         @keyframes bubble {
             0% {
                 transform: translateY(0);
@@ -255,16 +286,13 @@
             width: 25px;
         }
 
-           /* resopsive */
+        /* resopsive */
         @media (orientation:portrait) and (max-width:980px) {
             .code-container {
                 display: flex;
                 flex-direction: column;
                 margin-top: 15%;
             }
-
-
-
             .logo {
                 width: 11%;
                 font-size: 20px;
@@ -272,7 +300,6 @@
                 margin-top: 25px;
                 margin-left: 10px;
             }
-
             .icons {
                 display: flex;
                 margin-left: 10px;
@@ -310,9 +337,14 @@
                 height: 30vh;
                 margin-top: 10%;
             }
-
+            .react-code {
+                height: 30vh;
+                margin-top: 10%;
+            }
             @media (orientation:landscape) and (max-width:360px) {}
-
+            body{
+                height: 110vh;
+            }
             .container {
                 background-color: rgba(255, 255, 255, 0.2);
                 border-radius: 16px;
@@ -326,7 +358,6 @@
                 flex-direction: column;
                 margin-top: 5%;
             }
-
             .container {
                 width: 80%;
                 height: 5%;
@@ -360,27 +391,28 @@
                 font-size: 19px;
                 color: aliceblue;
             }
-
             .fa-house-chimney {
                 display: flex;
                 font-size: 19px;
                 color: aliceblue;
             }
-
             .html-code {
-                margin-top: 10%;
+                margin-top: 5%;
                 height: 20vh;
 
             }
-
             .css-code {
-                margin-top: 20%;
+                margin-top: 8%;
                 height: 20vh;
             }
 
             .js-code {
                 height: 20vh;
-                margin-top: 20%;
+                margin-top: 8%;
+            }
+            .react-code {
+                height: 20vh;
+                margin-top: 8%;
             }
 
         }
@@ -406,19 +438,21 @@
                 <p>HTML stands for Hyper Text Markup Language . HTML is the standard markup language for creating Web
                     pages.</p>
             </div>
-
             <div class="css-code">
                 <div class="per">90%</div><i class="fa-solid fa-code"></i><i class="fa-brands fa-css3-alt"></i>
                 <p>CSS stands for Cascading Style Sheets ·CSS describes how HTML elements are to be
                     displayed on screen, paper, or in other media ·</p>
             </div>
-
             <div class="js-code">
                 <div class="per">80%</div><i class="fa-solid fa-code"></i><i class="fa-brands fa-js"></i>
                 <p> JavaScript is a scripting language that enables you to create dynamically updating content,
                     animate images, and pretty much ...</p>
             </div>
-
+            <div class="react-code">
+                <div class="per">80%</div><i class="fa-solid fa-code"></i><i class="fa-brands fa-react"></i>
+                <p> JavaScript is a scripting language that enables you to create dynamically updating content,
+                    animate images, and pretty much ...</p>
+            </div>
         </div>
     </div>
     <div class="bubbles">
@@ -429,7 +463,8 @@
         <img src="bubble.png">
         <img src="bubble.png">
         <img src="bubble.png">
-     </div>
+    </div>
+
 </body>
 
 </html>
