@@ -200,6 +200,7 @@
         .fa-react:hover {
             color: rgb(255, 255, 255);
         }
+        
         .bubbles img {
             width: 50px;
             animation: bubble 7s linear infinite;
@@ -211,23 +212,10 @@
             align-items: center;
             justify-content: space-between;
             position: absolute;
-            bottom: -60px;
+            bottom: -15vh;
             position: fixed;
         }
-        /* percentage */
-        .per{
-            color: azure;
-        }
-        .per:hover{
-            color: #000;
-        }
-        .fa-code{
-            color: aliceblue;
-        }
-        .fa-code:hover{
-            color: rgb(0, 0, 0);
-        }
-     
+
         @keyframes bubble {
             0% {
                 transform: translateY(0);
@@ -244,11 +232,10 @@
             }
 
             100% {
-                transform: translateY(-100vh);
+                transform: translateY(-140vh);
                 opacity: 0;
             }
         }
-
         .bubbles img:nth-child(1) {
             animation-delay: 2s;
             width: 25px;
